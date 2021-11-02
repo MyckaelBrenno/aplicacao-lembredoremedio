@@ -3,6 +3,7 @@ import { Form } from '@unform/web'
 import { Scope } from '@unform/core'
 import * as Yup from 'yup'
 import '../App.css'
+import { Button, FormLabel } from '@material-ui/core'
 
 import Input from '../components/Form/Input'
 
@@ -47,21 +48,21 @@ function Client() {
       formRef.current.setData({
         name: 'Myckael Brenno',
         email: 'myckaelbrennno@gmail.com',
-        addres: {
+        address: {
           city: 'João Pessoa'
         }
       })
     }, 2000)
   }, [])
-
   return (
     <div className="client">
       <Form ref={formRef} onSubmit={handleSubmit}>
         {/*Componentes Inputs (ou seja, função Input sendo referenciada como tag)*/}
-        <label>
-          Nome:
+        <FormLabel>
+          Nome
           <Input name="name" />
-        </label>
+        </FormLabel>
+        <Input type="number" label="name" name="phone" />
         <Input type="email" name="email" />
         <Input type="password" name="password" />
         <Input type="textarea" name="descricao" />

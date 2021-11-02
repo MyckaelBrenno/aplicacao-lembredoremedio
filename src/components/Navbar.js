@@ -16,12 +16,22 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: 'fff' }}>
-        <div className="navbar">
+        <div className="navbar-fixed">
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
           <div>
             <img className="logo" src={logo} />
+          </div>
+          <div>
+            <h1 className="h1-navbar">Lembretes restantes: </h1>
+          </div>
+          <div>
+            <button className="button-navbar">
+              <Link className="link-navbar" to="/compras">
+                <b>37149 </b>
+              </Link>
+            </button>
           </div>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

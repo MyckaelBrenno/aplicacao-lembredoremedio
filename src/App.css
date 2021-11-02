@@ -7,17 +7,11 @@
   font-family: 'Lato', sans-serif;
 }
 
-.home,
 .client {
+  margin: 0;
   display: flex;
-  height: 90vh;
-  align-items: center;
   justify-content: center;
-  font-size: 3rem;
-}
-
-.client {
-  text-align: center;
+  align-items: center;
 }
 
 .client-logo {
@@ -53,4 +47,155 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-color: #e1e1e1;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 75vw;
+}
+
+.container .carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.container .carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.container .carousel .item {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 16px;
+  flex: none;
+}
+
+.container .carousel .item .image img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.container .carousel .item .info {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .carousel .item .info span {
+  display: block;
+  text-align: center;
+  color: #1e1e1e;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.container .carousel .item .info .name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #00a8fb;
+}
+
+.container .carousel .item .info .oldPrice {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  flex-grow: 1;
+  color: #e81a5d;
+}
+
+.container .carousel .item .info .price {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #ff7e3b;
+}
+
+.container .buttons {
+  width: 100%;
+  text-align: center;
+}
+
+.container .buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container .buttons button:first-child img {
+  transform: rotate(180deg);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: column;
+}
+
+.imgLembretes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.styleInput {
+  /*Estilo dos erros do formulario Yup*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 16px;
+}
+
+.login {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-login {
+  border-radius: 16px;
+}
+
+#user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #00a8fb;
 }

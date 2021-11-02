@@ -1,0 +1,24 @@
+[
+  {
+    "id": "94313731",
+    "name": "Tênis Nike Revolution 5 Max" ,
+    "price": 249.99,
+    "oldPrice": 349.99,
+    "image": "https://www.lembredoremedio.com.br/javax.faces.resource/3-lembrete.png.jsf?ln=img/agendamento"
+  },
+  {
+    "id": "94313762",
+    "name": "Tênis Nike Revolution 5",
+    "price": 249.99,
+    "oldPrice": 349.99,
+    "image": "https://www.lembredoremedio.com.br/javax.faces.resource/2-lembrete.png.jsf?ln=img/agendamento"
+  },
+  
+  { 
+    "id": "943137XQ",
+    "name": "Tênis Nike Revolution 5",
+    "price": 249.99,
+    "oldPrice": 349.99,
+    "image": "https://www.lembredoremedio.com.br/javax.faces.resource/1-lembrete.png.jsf?ln=img/agendamento"
+  }
+]
