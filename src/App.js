@@ -22,7 +22,6 @@ function App() {
           <Route exact path="/promocao">
             <Navbar />
             <Client />
-            <Home />
           </Route>
           <Route exact path="/atendente">
             <Navbar />

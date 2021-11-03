@@ -29,23 +29,30 @@ function Home() {
   return (
     <div className="body">
       <div className="container">
+        <br />
+        <h2 className="h2-home">Agendar para smartphone</h2>
         <span className="imgLembretes">
-          <img src="/static/images/appldr.png" alt="Super Shoes Logo" />
-          <br></br>
+          <FormControlLabel control={<Radio />} />
+          <img src="/static/images/appldr.png" alt="Lembretes" />
+          <br />
+          <br />
         </span>
+        <h2 className="h2-home">Agendar para celular comum</h2>
         <div className="carousel" ref={carousel}>
           {data.map(item => {
             const { id, name, price, oldPrice, image } = item
             return (
               <div className="item" key={id}>
+                <FormControlLabel control={<Radio />} />
                 <div className="image">
                   <img src={image} alt={name} />
                 </div>
-
                 <div className="info">
                   <span className="name">{name}</span>
                   <span className="OldPrice">{oldPrice}</span>
-                  <span className="price">{price}</span>
+                  <button type="submit" className="price">
+                    {price}
+                  </button>
                 </div>
               </div>
             )
@@ -65,6 +72,8 @@ function Home() {
             />
           </button>
         </div>
+        <h2 className="h2-home-1">Escolha o remédio</h2>
+        <br />
       </div>
     </div>
   )

@@ -24,7 +24,7 @@ export default function Input({ name, ...rest }) {
             style={
               ({ color: '#f00' },
               { width: '100%' },
-              { fontSize: '30' },
+              { fontSize: '30px' },
               { backgroundColor: 'orange' })
             }
           >
